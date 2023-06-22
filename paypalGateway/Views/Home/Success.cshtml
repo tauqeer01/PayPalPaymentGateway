@@ -1,0 +1,36 @@
+﻿
+
+@{
+    ViewData["Title"] = "Success";
+    string paymentId = ViewData["PaymentId"]?.ToString();
+    string token = ViewData["token"]?.ToString();
+    string payerId = ViewData["payerid"]?.ToString();
+
+}
+
+
+<div class="container mt-5 pt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card text-center p-3">
+                <h4 class="text-success">Thank for making payment
+                   
+                </h4>
+                <hr />
+                <p>
+                    your payment Id is :<mark>@payerId</mark> 
+                 
+              
+                   
+                </p>
+                <p>
+                    payment token is :<mark>@token</mark>
+                </p>
+                <p>
+                    payerid is :<mark>@payerId</mark>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
